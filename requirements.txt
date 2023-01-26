@@ -47,7 +47,7 @@ distlib==0.3.6
     # via virtualenv
 dj-database-url==0.5.0
     # via -r requirements.in
-django==3.2.25
+django==4.1.5
     # via
     #   -r requirements.in
     #   django-admin-sortable2
@@ -61,7 +61,7 @@ django==3.2.25
     #   django-storages
     #   django-unused-media
     #   easy-thumbnails
-django-admin-sortable2==1.0.4
+django-admin-sortable2==2.1.4
     # via -r requirements.in
 django-autoslug==1.9.4
     # via -r requirements.in
@@ -187,7 +187,7 @@ protobuf==4.24.4
     # via
     #   google-api-core
     #   googleapis-common-protos
-psycopg2-binary==2.8.3
+psycopg2-binary==2.9.5
     # via -r requirements.in
 py==1.11.0
     # via pytest
@@ -248,7 +248,6 @@ python-http-client==3.3.7
     #   sendgrid
 pytz==2022.7.1
     # via
-    #   django
     #   icalendar
     #   py-trello
 pyyaml==6.0
