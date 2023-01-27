@@ -8,10 +8,10 @@ django-countries
 django-date-extensions
 django-debug-toolbar
 django-extensions
-django-formtools==2.3.0
+django-formtools
 django-gulp-rev==0.2
 django-leaflet==0.24.0
-django-markdown-deux==1.0.5
+-e git+https://github.com/marksweb/django-markdown-deux@master#egg=django-markdown-deux
 django-recaptcha
 django-sendgrid-v5==0.8.1
 django-storages[boto3]==1.7.1

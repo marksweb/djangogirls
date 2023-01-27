@@ -77,13 +77,11 @@ django-debug-toolbar==3.8.1
     # via -r requirements.in
 django-extensions==3.2.1
     # via -r requirements.in
-django-formtools==2.3
+django-formtools==2.4
     # via -r requirements.in
 django-gulp-rev==0.2
     # via -r requirements.in
 django-leaflet==0.24.0
-    # via -r requirements.in
-django-markdown-deux==1.0.5
     # via -r requirements.in
 django-recaptcha==3.0.0
     # via -r requirements.in
