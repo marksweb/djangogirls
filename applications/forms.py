@@ -17,7 +17,7 @@ from .questions import generate_form_from_questions
 class ApplicationForm(forms.Form):
     def __init__(self, *args, **kwargs):
         """
-        The form here is programatically generated out of Question objects
+        The form here is programmatically generated out of Question objects
         """
         self.form = kwargs.pop("form")
         self.base_fields = generate_form_from_questions(self.form.question_set.all())
@@ -45,7 +45,7 @@ class ApplicationForm(forms.Form):
         return cleaned_data
 
     def save(self, *args, **kwargs):
-        application = Application(form=self.form)
+        application = Application.objects.create(form=self.form)
         answers = []
 
         for name in self.cleaned_data:
