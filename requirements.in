@@ -17,7 +17,7 @@ django-sendgrid-v5==0.8.1
 django-storages[boto3]==1.7.1
 django-tinymce
 django-unused-media==0.1.13
-django>=4.1,<4.2
+django>=4.2,<5.0
 dnspython
 easy-thumbnails
 easydict==1.10
