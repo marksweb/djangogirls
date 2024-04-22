@@ -45,8 +45,8 @@ INSTALLED_APPS = [
     "storages",
     "markdown_deux",
     "easy_thumbnails",
-    "captcha",
     "django_countries",
+    "django_recaptcha",
     "gulp_rev",
     "tinymce",
     "core",
@@ -150,7 +150,10 @@ AUTH_USER_MODEL = "core.User"
 
 THUMBNAIL_PRESERVE_EXTENSIONS = True
 THUMBNAIL_ALIASES = {
-    "": {"coach": {"size": (160, 160), "crop": "smart"}, "sponsor": {"size": (204, 204), "crop": False}},
+    "": {
+        "coach": {"size": (160, 160), "crop": "smart"},
+        "sponsor": {"size": (204, 204), "crop": False},
+    },
 }
 
 STATIC_URL = "/static/"
@@ -256,7 +259,7 @@ if DEBUG_TOOLBAR:
 
 RECAPTCHA_TESTING = os.environ.get("RECAPTCHA_TESTING") == "True"
 if RECAPTCHA_TESTING:
-    SILENCED_SYSTEM_CHECKS = ["captcha.recaptcha_test_key_error"]
+    SILENCED_SYSTEM_CHECKS = ["django_recaptcha.recaptcha_test_key_error"]
 
 BLEACH_ALLOWED_TAGS = ["p", "b", "i", "u"]
 BLEACH_ALLOWED_ATTRIBUTES = ["title"]
